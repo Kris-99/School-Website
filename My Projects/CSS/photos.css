@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
+
+
+
+
+/* CSS RESET   */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Anaheim;
+}
+.Images{
+    display: block;
+ width: 100vw;
+ margin: auto;
+}
+body{
+    background:#dcdce6;
+}
+.theh1{
+   border-bottom: 2px solid snow;
+    padding: 2rem;
+    width: 20vw;
+    display: block;
+    margin: auto;
+}
+.Images img{
+    box-shadow: 2px 2px 5px 2px gray;
+    padding: 1rem;
+    margin:3rem;
+    width: 60vw;
+    transition: all 700ms;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.Images img:hover{
+    transform: scale(1.05);
+}
+.Images a{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background: linear-gradient(to top right , #009245,#FCEE21);
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+.Images a:hover{
+    border: 2px solid pink;
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+.theh12{
+    margin: 1rem;
+}
+.icon{
+    position: absolute
+}
+footer{
+    text-align: center;
+    font-family: kufam;
+    margin: 2rem;
+}
+
+
+footer h4{
+ color: #000;
+ margin-top: 1rem;}
+
+

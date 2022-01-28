@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Anaheim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kufam&display=swap");
+/* The CSS Rest  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header and navbar styling */
+header {
+  height: 100vh;
+  width: 100vw;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon img {
+  margin-right: auto;
+  padding: 1rem;
+  width: 5rem;
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+}
+.navlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto !important;
+  margin: 1rem;
+  padding: 1rem;
+}
+.navlist li {
+  list-style: none;
+}
+.navlist li a {
+  text-decoration: none;
+  margin: 1.5rem;
+  padding: 1rem;
+  color: #000;
+  font-family: Kufam, sans-serif;
+  letter-spacing: 0.5px;
+
+  background-color: transparent;
+}
+
+header::before {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.7;
+  background-image: url(https://cdn.pixabay.com/photo/2016/10/10/03/25/school-design-1727586__340.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.navlist li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: rgb(192, 35, 122);
+  margin: 0px 1rem;
+  transition: width 400ms;
+}
+.navlist li a:hover::after {
+  width: 100%;
+  border: none;
+}
+/* text styling  */
+.text {
+  width: 100vw;
+
+  font-family: Kufam;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.text h1 {
+  margin: 0px auto !important;
+}
+.h11 {
+ 
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 23px;
+  letter-spacing: 1px;
+
+  position: relative;
+  display: inline-block;
+  z-index: -1;
+ 
+  animation: Textreveal2 2s ease-in-out 400ms forwards;
+}
+.h12 {
+ color: transparent;
+  text-transform: uppercase;
+  font-size: 23px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  z-index: -1;
+  animation: Textreveal2 2s ease-in-out 400ms forwards;
+ 
+}
+.h13 {
+ color: transparent;
+  text-transform: uppercase;
+  font-size: 23px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+   z-index: -1;
+   animation: Textreveal2 2s ease-in-out 400ms forwards;
+}
+.h14 {
+ color: transparent;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+ z-index: -1;
+  font-size: 23px;
+  letter-spacing: 1px;
+  animation: Textreveal2 2s ease-in-out 400ms forwards;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Main contnent Styling   */
+
+.thegrid {
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+.para {
+  background: linear-gradient(to right, #cc2b5e, #753a88);
+  font-family: kufam;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  font-size: 23px;
+  letter-spacing: 1px;
+  margin: 4rem 2rem;
+  text-align: justify;
+}
+.thetext {
+  text-align: center;
+  font-size: 30px;
+  font-family: kufam;
+ 
+  background: linear-gradient(to right, #ffd89b, #19547b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+ 
+ 
+}
+
+.thetext h1 {
+  padding-top: 2rem;
+}
+main {
+  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+  color: #000022;
+  border: none;
+   opacity: 0;
+   transform: scale(0.1);
+   transition: all 1.5s ease-in-out ;
+  
+  width: 100vw;
+}
+.active{
+  opacity: 1;
+  transform: scale(1);
+}
+figcaption {
+  display: block;
+  margin: auto;
+  width: 500px;
+  font-family: kufam;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+  text-align: center;
+}
+figure img {
+  box-shadow: 2px 2px 5px 2px slategrey;
+  border-radius: 20px;
+  transition: all 800ms;
+  margin: 1.5rem;
+  padding: 1rem;
+}
+figure img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.theinformation {
+  background: rgb(255, 251, 235);
+  font-family: kufam;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.theinformation h1 {
+  margin: 2.5rem;
+  padding: 1rem;
+}
+.theinformation p {
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 60vw;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+}
+.anotherdiv {
+  margin: auto;
+  float: center;
+}
+.floatright {
+  margin: auto;
+  float: center;
+}
+.thegrid img {
+  width: 60vw;
+}
+.checkbtn,
+.theimg {
+  font-size: 1rem;
+  margin: 1.5rem;
+  float: right;
+}
+.theimg {
+  display: none;
+}
+#Check {
+  display: none;
+}
+.cross {
+  display: none;
+}
+.h11 span , .h12 span , .h13 span , .h14 span{
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to right, #cc2b5e, #753a88);
+ 
+  
+}
+.h11 span{
+  animation: Textreveal 2s ease-in-out forwards;
+}
+.h12 span{
+  animation: Textreveal 2s ease-in-out 200ms forwards;
+}
+.h13 span{
+  animation: Textreveal 2s ease-in-out 400ms forwards;
+}
+.h14 span{
+  animation: Textreveal 2s ease-in-out 600ms forwards;
+}
+
+
+/* MEDIA QUERIES   */
+
+@media screen and (max-width: 500px) {
+  * {
+    letter-spacing: 0;
+  }
+  .anotherdiv {
+    width: 100vw;
+    display: block;
+    float: center;
+    margin: auto;
+    text-align: justify;
+  }
+  .floatright {
+    text-align: justify;
+    float: center;
+    margin: auto;
+    width: 100vw;
+    display: block;
+  }
+  figcaption {
+    text-align: justify;
+    float: center;
+    width: 80vw;
+    display: block;
+
+    margin: auto;
+    text-align: center;
+  }
+  main {
+    border-radius: 0;
+  }
+  .thegrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .thegrid > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .thegrid img {
+    width: 80vw;
+  }
+  .theimg {
+    position: absolute;
+    right: 10px;
+
+    z-index: 1;
+  }
+  .theimg {
+    display: block;
+    margin: 1rem;
+  }
+  .thenavbar {
+    margin: 0;
+    padding: 0;
+  }
+  .nav ul {
+    height: 100vh;
+    width: 100vw;
+    background: #73a5c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: -100%;
+    transition: all 600ms;
+  }
+
+  header {
+    overflow: hidden;
+  }
+
+  .text {
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .cross {
+    position: absolute;
+    right: 10px;
+  
+    margin: 1rem;
+    z-index: 1;
+  }
+}
+
+ /* FOOTER   */
+footer {
+  text-align: center;
+  font-family: kufam;
+  margin: 2rem;
+}
+footer h4 {
+  color: #000;
+  margin-top: 1rem;}
+
+
+    /* ANIMATIONS */
+@keyframes Textreveal {
+  50%{
+    width: 100%;
+    left: 0%;
+  }
+  100%{
+    width: 0%;
+    left: 100%;
+  }
+}
+@keyframes Textreveal2 {
+  100%{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+    
+  }
+}
+
